@@ -26,6 +26,7 @@ const loadFrames = frameCount => {
 const frames = loadFrames(frameCount);
 
 // gsap animation
+// https://greensock.com/docs/v3/GSAP/Timeline/to()
 const frameTrack = { ballFrameCursor: 0 };
 gsap.to(frameTrack, {
 	//able to access the properties of the frameTrack object
@@ -40,6 +41,19 @@ gsap.to(frameTrack, {
 	},
 	onUpdate: render
 });
+gsap.fromTo(
+	'#header-title',
+	{ opacity: 0 },
+	{
+		opacity: 1,
+
+		scrollTrigger: {
+			scrub: true,
+			start: '50%',
+			end: '60%'
+		}
+	}
+);
 
 // render function
 function render() {
