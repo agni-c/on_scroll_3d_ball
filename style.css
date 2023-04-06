@@ -12,6 +12,7 @@
 	width: 100vw;
 	min-height: 100vh;
 	/* background-color: red; */
+	object-fit: cover;
 }
 #header-title {
 	position: fixed;

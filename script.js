@@ -50,8 +50,8 @@ gsap.fromTo(
 		scrollTrigger: {
 			scrub: true,
 			start: '30%',
-			end: '60%',
-			markers: true
+			end: '60%'
+			// markers: true
 		},
 		onComplete: () => {
 			console.log('done');
@@ -63,6 +63,8 @@ gsap.fromTo(
 // render function
 function render() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	// ctx.canvas.width = images[0].width;
+	// ctx.canvas.height = images[0].height;
 	let img = frames[frameTrack.ballFrameCursor];
 
 	function drawImageScaled(img, ctx) {
