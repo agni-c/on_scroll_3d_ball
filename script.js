@@ -49,8 +49,13 @@ gsap.fromTo(
 
 		scrollTrigger: {
 			scrub: true,
-			start: '50%',
-			end: '60%'
+			start: '30%',
+			end: '60%',
+			markers: true
+		},
+		onComplete: () => {
+			console.log('done');
+			gsap.to('#header-title', { opacity: 0 });
 		}
 	}
 );
