@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+#canvas {
+	width: 100vw;
+	min-height: 100vh;
+	/* background-color: red; */
+}
+#header-title {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	display: none;
+}
